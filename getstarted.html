@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.svg" />
+    <title>BusedX</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light shadow"> <a class="navbar-brand" href="home.html"><img src="images/favicon.svg"
+                alt="Site Logo" width="50" height="50"></a> </nav> <!-- Survey Section -->
+    <section class="survey container">
+        <h2 class="text-center">Get Started with Teaching on BusedX</h2>
+        <form> <!-- Question 1 -->
+            <div class="form-group"> <label for="experience">1. How much teaching experience do you have?</label> <select
+                    class="form-control" id="experience" name="experience">
+                    <option value="none">None</option>
+                    <option value="some">Some</option>
+                    <option value="experienced">Experienced</option>
+                    <option value="expert">Expert</option>
+                </select> </div> <!-- Question 2 -->
+            <div class="form-group"> <label for="topic">2. What topic do you want to teach?</label> <input type="text"
+                    class="form-control" id="topic" name="topic" placeholder="e.g., Python programming"> </div>
+            <!-- Question 3 -->
+            <div class="form-group"> <label for="audience">3. Who is your target audience?</label> <input type="text"
+                    class="form-control" id="audience" name="audience"
+                    placeholder="e.g., Beginners, Intermediate, Advanced"> </div> <!-- Question 4 -->
+            <div class="form-group"> <label for="goal">4. What is the main goal of your course?</label> <input type="text"
+                    class="form-control" id="goal" name="goal" placeholder="e.g., To teach the basics of Python"> </div>
+            <!-- Submit Button -->
+            <div class="text-center"> <a href="upload.html" class="btn btn-primary btn-lg">Next: Upload Your
+                    Course</a> </div>
+        </form>
+    </section>
+    <script src="js/replaceme.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>

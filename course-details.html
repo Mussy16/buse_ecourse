@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.svg" />
+    <title>BusedX</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light shadow">
+        <a class="navbar-brand" href="index.html"><img src="images/favicon.svg" alt="Site Logo" width="40" height="40"></a>
+    </nav>
+    <!-- Course Header -->
+    <div class="bg-light p-4 border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Introduction to Python</h1>
+                    <p class="text-muted">Offered by Bindura University</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="payment.html" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <img src="https://picsum.photos/800/400" class="img-fluid rounded mb-4" alt="Course Image">
+                <h4>Program Overview</h4>
+                <p>Learn Python from scratch and build powerful applications. This course will guide you through the
+                    basics of Python programming and help you develop the skills needed for advanced topics.</p>
+                <h4>What You'll Learn</h4>
+                <ul>
+                    <li>Fundamentals of Python programming</li>
+                    <li>Data types and structures</li>
+                    <li>Control flow and functions</li>
+                    <li>Modules and packages</li>
+                    <li>Working with files</li>
+                </ul>
+
+                <!-- Accordion for Course Details -->
+                <div class="accordion" id="courseDetails">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Course Content
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#courseDetails">
+                            <div class="accordion-body">
+                                <div class="accordion" id="courseContentDetails">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="contentHeadingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#contentCollapseOne"
+                                                aria-expanded="false" aria-controls="contentCollapseOne">
+                                                Week 1: Introduction to Python
+                                            </button>
+                                        </h2>
+                                        <div id="contentCollapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="contentHeadingOne" data-bs-parent="#courseContentDetails">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li><a href="#" class="text-decoration-none" data-bs-toggle="modal"
+                                                            data-bs-target="#videoModal"
+                                                            data-bs-video="https://www.youtube.com/embed/iG9CE55wbtY">Video:
+                                                            Introduction and Setup</a></li>
+                                                    <li><a href="#" class="text-decoration-none">PDF: Python Basics</a>
+                                                    </li>
+                                                    <li><a href="#" class="text-decoration-none">Quiz: Week 1
+                                                            Assessment</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="contentHeadingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#contentCollapseTwo"
+                                                aria-expanded="false" aria-controls="contentCollapseTwo">
+                                                Week 2: Data Types and Variables
+                                            </button>
+                                        </h2>
+                                        <div id="contentCollapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="contentHeadingTwo" data-bs-parent="#courseContentDetails">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li><a href="#" class="text-decoration-none" data-bs-toggle="modal"
+                                                            data-bs-target="#videoModal" data-bs-video="#">Video: Data
+                                                            Types</a></li>
+                                                    <li><a href="#" class="text-decoration-none">PDF: Working with
+                                                            Variables</a></li>
+                                                    <li><a href="#" class="text-decoration-none">Quiz: Week 2
+                                                            Assessment</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat for other weeks -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal for Video -->
+                    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="videoModalLabel">Introduction and Setup</h5> <button type="button"
+                                        class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ratio ratio-16x9"> <iframe id="videoFrame" src="" frameborder="0"
+                                            allowfullscreen></iframe> </div>
+                                </div>
+                                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Instructors
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#courseDetails">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Dr. John Doe</li>
+                                    <li>Prof. Jane Smith</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Reviews
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#courseDetails">
+                            <div class="accordion-body">
+                                <div class="d-flex mb-3">
+                                    <div class="me-3">
+                                        <div class="bg-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-1"><strong>Alice Johnson</strong></p>
+                                        <p class="mb-0 text-muted">"This course was very informative and
+                                            well-structured."</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div class="me-3">
+                                        <div class="bg-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-1"><strong>Bob Brown</strong></p>
+                                        <p class="mb-0 text-muted">"Excellent course for beginners. Highly recommend!"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Course Information -->
+                <div class="mt-4">
+                    <h4>Requirements</h4>
+                    <p>Basic understanding of programming concepts is recommended but not required.</p>
+                    <h4>Duration</h4>
+                    <p>6 weeks (2-3 hours per week)</p>
+                </div>
+            </div>
+
+            <!-- Sidebar with Sign-Up Button -->
+            <div class="col-lg-4">
+                <div class="card sticky-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Enroll Now</h4>
+                        <p class="card-text">Join thousands of learners and expand your knowledge.</p>
+                        <a href="signup.html" class="btn btn-primary w-100 mb-2">Sign Up</a>
+                        <button type="button" class="btn btn-outline-secondary w-100" data-bs-toggle="modal"
+                            data-bs-target="#learnMoreModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Learn More -->
+    <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="learnMoreModalLabel">More Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This course offers an in-depth introduction to Python, covering everything from basic syntax to
+                        advanced topics like file handling and modules. You'll gain hands-on experience through
+                        practical exercises and projects designed to reinforce your learning.</p>
+                    <p>By the end of this course, you will have a solid foundation in Python programming, enabling you
+                        to build robust applications and pursue further studies in data science or software development.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <script src="js/bootstrap.bundle.min.js"></script>
+                    <script src="js/script.js"></script>
+</body>

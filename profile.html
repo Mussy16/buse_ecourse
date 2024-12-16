@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.svg" />
+    <title>BusedX</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid"> <a class="navbar-brand" href="home.html"><img src="images/favicon.svg" alt="BusedX" width="50"
+                    height="50"></a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#courses">Explore Courses</a> </li>
+                </ul>
+                <div class="input-group w-50 ms-lg-3 mt-2 mt-lg-0"> <input type="search" class="form-control"
+                        placeholder="What do you want to learn?" aria-label="Search"> <button
+                        class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button> </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item position-relative"> <a class="nav-link" href="teaching.html" id="teachLink">Teach on
+                            BusedX</a>
+                        <div class="card text-center shadow"
+                            style="position: absolute; top: 50px; right: 0; display: none;">
+                            <div class="card-body">
+                                <p class="card-text">Unlock your potential and connect with the world.</p> <a
+                                    href="teaching.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="my-learning.html">My Learning</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="profileDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i> </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container edit-profile">
+        <h2>Edit Profile</h2>
+        <div class="profile-photo"> <img src="https://picsum.photos/150" alt="Profile Photo"> </div>
+        <form>
+            <div class="mb-3"> <label for="fullName" class="form-label">Full Name</label> <input type="text"
+                    class="form-control" id="fullName" name="fullName" required> </div>
+            <div class="mb-3"> <label for="headline" class="form-label">Headline</label> <input type="text"
+                    class="form-control" id="headline" name="headline" required> </div>
+            <div class="mb-3"> <label for="bio" class="form-label">Biography</label> <textarea class="form-control" id="bio"
+                    name="bio" rows="4" required></textarea> </div>
+            <div class="mb-3"> <label for="profilePhoto" class="form-label">Profile Photo</label> <input
+                    class="form-control" type="file" id="profilePhoto" name="profilePhoto"> </div>
+            <div class="d-grid gap-2"> <button type="submit" class="btn btn-primary">Save Changes</button> </div>
+        </form>
+    </div>
+    <script src="js/replaceme.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>

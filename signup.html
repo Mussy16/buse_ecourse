@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.svg" />
+    <title>BusedX</title>
+  </head>
+<body>
+    <!-- Navbar with Logo -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="images/favicon.svg" alt="Site Logo" width="50" height="50"></a>
+    </nav>
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <!-- Left Side with Join Us Design -->
+            <div class="col-md-6 d-none d-md-flex bg-primary text-white align-items-center justify-content-center">
+                <div class="text-center">
+                    <h1 class="display-4">Join Us</h1>
+                    <p class="lead">Become a part of our learning community with BusedX.</p>
+                </div>
+            </div>
+            <!-- Right Side with Signup Form -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="card p-4 shadow-sm w-75">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Sign Up</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="fullname" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullname" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                        </form>
+                        <hr>
+                        <div class="mt-3 text-center">
+                            <p class="lead">Or sign up with</p>
+                            <p class="lead">Company or school credentials</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-dark"><i class="fab fa-google me-2"></i>Google</button>
+                                <button class="btn btn-outline-dark"><i class="fab fa-microsoft me-2"></i>Microsoft</button>
+                                <button class="btn btn-outline-dark"><i class="fab fa-github me-2"></i>GitHub</button>
+                                <button class="btn btn-outline-dark"><i class="fab fa-apple me-2"></i>Apple</button>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p>Already have an account? <a href="#" class="text-decoration-none">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>

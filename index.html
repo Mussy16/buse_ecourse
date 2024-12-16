@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.svg" />
+    <title>BusedX</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/favicon.svg" alt="BusedX" width="50" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Explore Courses</a>
+                    </li>
+                </ul>
+                <div class="input-group w-50 ms-lg-3 mt-2 mt-lg-0">
+                    <input type="search" class="form-control" placeholder="What do you want to learn?"
+                        aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="teaching.html" id="teachLink">Teach on BusedX</a>
+                        <div class="card text-center shadow"
+                            style="position: absolute; top: 50px; right: 0; display: none;">
+                            <div class="card-body">
+                                <p class="card-text">Unlock your potential and connect with the world.</p>
+                                <a href="teaching.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-dark me-2" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-dark" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Header-->
+    <header class="py-7 bg-primary shadow-lg mb-4">
+        <div class="container">
+            <div class="row mb-3 text-center">
+                <div class="col-12 text-container">
+                    <h1 class="display-4 text-white mt-2">Explore Our Training and Courses</h1>
+                    <h3 class="display-6 text-white mt-2">BusedX</h3>
+                    <p class="lead text-white mb-4">Whether you're a beginner or an experienced professional, our
+                        carefully
+                        curated content will empower you to enhance your skills and expand your knowledge.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"> <!-- Image Carousel -->
+                    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators"> <button type="button" data-bs-target="#slider"
+                                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button> <button type="button" data-bs-target="#slider"
+                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner rounded-5"> <!-- Carousel items -->
+                            <div class="carousel-item active"> <img src="/images/slider1.jpg" alt="Slide 1"
+                                    class="d-block w-100 rounded-5"> </div>
+                            <div class="carousel-item"> <img src="/images/slider2.jpg" alt="Slide 2"
+                                    class="d-block w-100 rounded-5"> </div>
+                            <div class="carousel-item"> <img src="/images/slider3.jpg" alt="Slide 3"
+                                    class="d-block w-100 rounded-5"> </div>
+                        </div> <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev"> <span
+                                class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                                class="visually-hidden">Previous</span> </a> <a class="carousel-control-next"
+                            href="#slider" role="button" data-bs-slide="next"> <span class="carousel-control-next-icon"
+                                aria-hidden="true"></span> <span class="visually-hidden">Next</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Courses Section -->
+    <section class="courses py-6 mx-4 mt-3" id="courses">
+        <h4 class="fw-semibold ms-4">Courses</h4>
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"> <!-- Card 1 -->
+                <div class="col course-card"> <a href="course-details.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm"> <img src="https://picsum.photos/300/200" class="card-img-top"
+                                alt="Course Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Python</h5>
+                                <p class="card-text">Learn Python from scratch and build powerful applications.</p>
+                                <p class="card-text"><small class="text-muted">Bindura University</small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-warning"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star-half-alt"></i> <span class="text-muted">(4.5)</span> </div>
+                                    <span class="badge bg-primary">Course</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a> </div> <!-- Card 2 -->
+                <div class="col course-card"> <a href="course-details.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm"> <img src="https://picsum.photos/300/200" class="card-img-top"
+                                alt="Course Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Python</h5>
+                                <p class="card-text">Learn Python from scratch and build powerful applications.</p>
+                                <p class="card-text"><small class="text-muted">Bindura University</small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-warning"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star-half-alt"></i> <span class="text-muted">(4.5)</span> </div>
+                                    <span class="badge bg-primary">Course</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a> </div> <!-- Card 3 -->
+                <div class="col course-card"> <a href="course-details.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm"> <img src="https://picsum.photos/300/200" class="card-img-top"
+                                alt="Course Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Python</h5>
+                                <p class="card-text">Learn Python from scratch and build powerful applications.</p>
+                                <p class="card-text"><small class="text-muted">Bindura University</small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-warning"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star-half-alt"></i> <span class="text-muted">(4.5)</span> </div>
+                                    <span class="badge bg-primary">Course</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a> </div> <!-- Card 4 -->
+                <div class="col course-card"> <a href="course-details.html" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm"> <img src="https://picsum.photos/300/200" class="card-img-top"
+                                alt="Course Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Python</h5>
+                                <p class="card-text">Learn Python from scratch and build powerful applications.</p>
+                                <p class="card-text"><small class="text-muted">Bindura University</small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-warning"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star-half-alt"></i> <span class="text-muted">(4.5)</span> </div>
+                                    <span class="badge bg-primary">Course</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a> </div>
+            </div>
+        </div> <!-- Show More Courses Button -->
+        <div class="d-flex justify-content-center mt-4"> <a href="#" class="btn btn-danger">Show more courses</a> </div>
+    </section>
+         <!--Programs Sections-->
+             <section class="courses py-6 mx-4 mt-3">
+                    <h4 class="fw-semibold ms-4">Programs</h4>
+                    <div class="container mt-5">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                            <!-- Card 1 -->
+                            <div class="col">
+                                <a href="course-details.html" class="text-decoration-none text-dark">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="https://picsum.photos/300/200" class="card-img-top"
+                                            alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Introduction to Python</h5>
+                                            <p class="card-text">Learn Python from scratch and build powerful
+                                                applications.</p>
+                                            <p class="card-text"><small class="text-muted">Bindura University</small>
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text-warning">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <span class="text-muted">(4.5)</span>
+                                                </div>
+                                                <span class="badge bg-primary">Professional Certificate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col">
+                                <a href="course-details.html" class="text-decoration-none text-dark">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="https://picsum.photos/300/200" class="card-img-top"
+                                            alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Introduction to Python</h5>
+                                            <p class="card-text">Learn Python from scratch and build powerful
+                                                applications.</p>
+                                            <p class="card-text"><small class="text-muted">Bindura University</small>
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text-warning">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <span class="text-muted">(4.5)</span>
+                                                </div>
+                                                <span class="badge bg-primary">Professional Certificate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col">
+                                <a href="course-details.html" class="text-decoration-none text-dark">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="https://picsum.photos/300/200" class="card-img-top"
+                                            alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Introduction to Python</h5>
+                                            <p class="card-text">Learn Python from scratch and build powerful
+                                                applications.</p>
+                                            <p class="card-text"><small class="text-muted">Bindura University</small>
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text-warning">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <span class="text-muted">(4.5)</span>
+                                                </div>
+                                                <span class="badge bg-primary">Professional Certificate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="col">
+                                <a href="course-details.html" class="text-decoration-none text-dark">
+                                    <div class="card h-100 shadow-sm">
+                                        <img src="https://picsum.photos/300/200" class="card-img-top"
+                                            alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Introduction to Python</h5>
+                                            <p class="card-text">Learn Python from scratch and build powerful
+                                                applications.</p>
+                                            <p class="card-text"><small class="text-muted">Bindura University</small>
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text-warning">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <span class="text-muted">(4.5)</span>
+                                                </div>
+                                                <span class="badge bg-primary">Professional Certificate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            <!-- Show More Programs Button -->
+            <div class="d-flex justify-content-center mt-4">
+               <a href="#" class="btn btn-danger">Show more courses</a>
+             </div>
+                </section>
+                <!--footer-->
+                <footer class="bg-dark text-white pt-4 mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <h5>About</h5>
+                                <p class="small">BusedX brings the Bindura learning experience to people everywhere.
+                                    Explore more
+                                    with online courses and professional education.</p>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <h5>Quick Links</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="text-white">Home</a></li>
+                                    <li><a href="#" class="text-white">Courses</a></li>
+                                    <li><a href="#" class="text-white">Programs</a></li>
+                                    <li><a href="#" class="text-white">About Us</a></li>
+                                    <li><a href="#" class="text-white">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <h5>Support</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="text-white">Help Center</a></li>
+                                    <li><a href="#" class="text-white">FAQs</a></li>
+                                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                                    <li><a href="#" class="text-white">Terms of Service</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <h5>Connect with Us</h5>
+                                <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center mt-3">
+                                <p class="small">&copy; 2024 Bindura University. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Chat Widget -->
+                <div class="chat-widget">
+                    <div class="chat-icon" onclick="toggleChatWindow()"> <img src="images/favicon.svg" alt="Chat Icon">
+                    </div>
+                    <div class="chat-window" id="chatWindow">
+                        <div class="chat-header bg-dark">CourseMate <button class="close-btn"
+                                onclick="closeChatWindow()">&times;</button>
+                        </div>
+                        <div class="chat-body mb-4">
+                            <p>Before we get started, just a reminder that this chat is AI generated, mistakes are
+                                possible. By
+                                using it you agree that BusedX may create a record of this chat. Your personal data will
+                                be used as
+                                described in our <a href="#">privacy policy</a>.</p>
+                        </div>
+                        <div class="chat-footer">
+                            <div class="input-group"> <input type="text" class="form-control" id="chatInput"
+                                    placeholder="Write a message"> <span class="input-group-text"
+                                    onclick="sendMessage()"> <i class="fas fa-paper-plane"></i>
+                                    <!-- Use Font Awesome or similar for the icon --> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector('#teachLink').addEventListener('mouseover', function () {
+                        document.querySelector('.card').style.display = 'block';
+                    });
+                    document.querySelector('.card').addEventListener('mouseleave', function () {
+                        this.style.display = 'none';
+                    });
+                </script>
+                <script src="js/replaceme.min.js"></script>
+                <script src="js/bootstrap.bundle.min.js"></script>
+                <script src="js/script.js"></script>
+</body>
+
+</html>

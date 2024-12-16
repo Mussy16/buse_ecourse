@@ -1,0 +1,412 @@
+.card {
+    width: 300px;
+
+}
+
+#card {
+    width: 400px;
+    height: 250px;
+}
+
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    color: blue;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange;
+}
+
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chat-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.chat-window {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-body {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.chat-footer {
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.chat-footer textarea {
+    flex-grow: 1;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .carousel-inner img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .carousel-inner img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner img {
+        height: 250px;
+    }
+}
+
+header {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    /* Add margin to the bottom of the header */
+    height: auto;
+}
+
+.text-container p {
+    margin: auto;
+    max-width: 90%;
+}
+
+.courses {
+    margin-top: 30px;
+}
+
+.course-card {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    .course-card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        margin-bottom: 10px;
+    }
+}
+
+.hero {
+    background-image: url('https://picsum.photos/1200/600');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.benefits,
+.steps {
+    padding: 60px 0;
+}
+
+.benefits h2,
+.steps h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.benefits .icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.courses {
+    margin-top: 30px;
+}
+
+.course-card {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    .course-card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        margin-bottom: 10px;
+    }
+}
+
+.show-more-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.edit-profile {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.form-group .fa {
+    margin-right: 5px;
+}
+
+.save-button {
+    margin-top: 20px;
+}
+
+.account-settings {
+    margin-top: 30px;
+}
+
+.settings-section {
+    margin-bottom: 30px;
+}
+
+.settings-section h3 {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.save-button {
+    margin-top: 20px;
+}
+
+.my-learning {
+    margin-top: 30px;
+}
+
+.course-card {
+    margin-bottom: 20px;
+}
+
+.course-card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+my-learning {
+    margin-top: 30px;
+}
+
+.course-card {
+    margin-bottom: 20px;
+}
+
+.course-card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.edit-profile {
+    margin-top: 30px;
+}
+
+.profile-photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ced4da;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.form-group .fa {
+    margin-right: 5px;
+}
+
+.save-button {
+    margin-top: 20px;
+}
+
+.shopping-cart {
+    margin-top: 30px;
+}
+
+.course-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.course-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.course-details {
+    flex-grow: 1;
+}
+
+.course-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.survey {
+    margin-top: 30px;
+}
+
+.survey h2 {
+    margin-bottom: 20px;
+}
+
+.survey .form-group {
+    margin-bottom: 15px;
+}
+
+.survey .btn-primary {
+    margin-top: 20px;
+}
+
+.upload-course {
+    margin-top: 30px;
+}
+
+.upload-course h2 {
+    margin-bottom: 20px;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+.step h4 {
+    margin-bottom: 15px;
+}
+
+.step p {
+    margin-bottom: 10px;
+}
